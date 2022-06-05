@@ -27,15 +27,25 @@ li {
 .title {
     text-align: center;
     font-family: 'Abel', sans-serif;
-    color: whitesmoke;
+    color: black;
 }
 
 header {
-    background-image: url(./assets/backgroundImage.jpg);
+    background-image: url(./assets/head2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+.profilePic {
+    text-align: center;
+}
+.me {
+    width: 400px;
+    border-radius: 50%;
+    padding-top: 20px;
+
 }
 
 h1 {
@@ -46,7 +56,7 @@ h1 {
 
 .navBar ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     display:flex;
     margin: 0;
     padding-top: 20px;
@@ -60,7 +70,7 @@ h1 {
 
 .navBar a {
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
     font-family: 'Abel', sans-serif;
     padding: 10px;
     font-size: 25px;
