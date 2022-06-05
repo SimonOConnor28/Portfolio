@@ -161,7 +161,68 @@ a:hover:after {
 .skills p {
     color: white;
 }
-.fadeInText {
+
+.profession {
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+.floatOnHoverShow {
+    display: none;
+}
+
+
+.floatOnHover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.floatOnHover:hover,
+.floatOnHover:focus,
+.floatOnHover:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+/* float styles  
+/* .fadeInText {
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
     animation: fadeIn 5s; 
@@ -219,26 +280,4 @@ a:hover:after {
     100% {
         opacity: 1;
     }
-}
-
-
-.floatOnHover {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.floatOnHover:hover,
-.floatOnHover:focus,
-.floatOnHover:active {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-}
+} */
