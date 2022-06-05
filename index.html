@@ -5,15 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon O'Connor</title>
-
-    <style>
-        body {
-            background-color: cadetblue;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ae83700708.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Welcome to my Website</h1>
-   
+    <header>
+
+        <div class="wrapper">
+            <nav class="navBar">
+                <ul>
+                    <li class="underLine"><a href="#">About</a></li>
+                    <li class="underLine"><a href="#">Projects</a></li>
+                    <li class="underLine"><a href="#">Skills</a></li>
+                    <li class="underLine"><a href="#">Contact</a></li>
+                </ul>
+
+                <div>
+                    <!--put picture here-->
+                    <img src="" alt="">
+                </div>
+
+                <div class="title">
+
+                    <h1>Hi, I'm Simon O'Connor</h1>
+                    <p class="fadeInText">Front End Developer</p>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="about">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellat
+                    vel sunt, quasi dolorem ex velit enim laboriosam voluptas reiciendis, pariatur quo quam aliquid non reprehenderit odio veritatis alias. Quod.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad ea earum error vero unde mollitia rem delectus quo! Vel debitis fugiat ducimus
+                    exercitationem eius ratione ab neque amet, quae quas.
+                </p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="wrapper">
+                <h2>Skills</h2>
+                <ul>
+                    <li class="floatOnHover">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </li>
+
+                    <li class="floatOnHover">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </li>
+
+                    <li class="floatOnHover">
+                        <i class="fa-brands fa-sass"></i>
+                        <p>SASS</p>
+                    </li>
+
+                    <li class="floatOnHover">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JAVASCRIPT</p>
+                    </li>
+
+                    <li class="floatOnHover">
+                        <i class="fa-brands fa-react"></i>
+                        <p>REACT</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="projects">
+                <ul>
+                    <li>
+                        <img class="project1" src="./assets/delicious.jpg" alt="project 1">
+                        <a href="">Live Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>
