@@ -10,8 +10,23 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     --font:font-family: 'Abel',sans-serif;
 }
 
+
 html {
     font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+p
+{
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -20,46 +35,34 @@ li {
 
 .wrapper {
     max-width: 1200px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
-.title {
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-    color: black;
+header h2 {
+    color: white;
+    font-weight: 400;
+    margin-top: 20px;
 }
 
-header {
-    background-image: url(./assets/head2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.profilePic {
-    text-align: center;
-}
-.me {
-    width: 400px;
-    border-radius: 50%;
-    padding-top: 20px;
-
-}
-
-h1 {
-    font-family: 'Abel', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.10rem;
+.navBar {
+    display: flex;
+    font-weight: 400;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 0 10px;
 }
 
 .navBar ul {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     display:flex;
     margin: 0;
     padding-top: 20px;
+    width: 100%;
 }
 
 .navBar li {
@@ -70,10 +73,10 @@ h1 {
 
 .navBar a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Abel', sans-serif;
     padding: 10px;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     display: inline-block;
@@ -84,7 +87,7 @@ h1 {
     color: black;
 }
 
-a:after {
+.navBar a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -102,16 +105,87 @@ a:hover:after {
     left: 0;
 }
 
+.heroTitle {
+    padding-top: 300px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    color: black;
+}
+
+header {
+    background-image: url(./assets/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.profilePic {
+    text-align: center;
+}
+
+.me {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+h1 {
+    font-family: 'Abel', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.10rem;
+    font-size: 41px;
+    font-weight: 400;
+    color: white;
+}
+
+.profession {
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+header .arrow {
+    color: white;
+    animation: arrow-hover 2s ease-in-out infinite;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 30px;
+}
+header .arrow i {
+    color: white;
+}
+
+@keyframes arrow-hover {
+    0% {
+        bottom: 50px;
+    }
+
+    50% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 50px;
+    }
+}
 
 /*==== about styles */
 
 .about {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 95px;
+    margin-bottom: 120px;
 }
 
 .about h2 {
-    text-align: center;
     font-family:'Abel', sans-serif;
     font-size: 3rem;
     }
@@ -127,17 +201,16 @@ a:hover:after {
 
 
 .skills {
-    background-color: #365C46;
-    margin-top: 100px;
+    background-color: #D3D3D3;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
 
 .skills h2 {
     text-align: center;
-    padding-top: 50px;
     font-family: 'Abel', sans-serif;
     font-size: 60px;
-    color: white;
-    
+    padding-bottom: 25px;
 }
 
 .skills ul{
@@ -150,7 +223,7 @@ a:hover:after {
 
 .skills i {
     font-size: 120px;
-    color: white;
+    color: grey;
 }
 
 .skills li {
@@ -162,19 +235,15 @@ a:hover:after {
     color: white;
 }
 
-.profession {
-    display: grid;
-    place-items: center;
-}
-
 .typing-demo {
-    width: 22ch;
+    width: 18ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-family: monospace;
+    font-family: 'Abel',sans-serif;
     font-size: 2em;
+    font-weight: 400;
 }
 
 @keyframes typing {
@@ -201,6 +270,8 @@ a:hover:after {
     transition-property: transform;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+    font-family: 'Abel',
+        sans-serif;;
 }
 
 .floatOnHover:hover,
