@@ -24,6 +24,10 @@ p
     margin: 0;
 }
 
+img {
+    display: inline-block;
+    width: 100%;
+}
 ul{
     margin: 0;
     padding: 0;
@@ -83,9 +87,9 @@ header h2 {
     position: relative;
 }
 
-.navBar a:hover {
+/* .navBar a:hover {
     color: black;
-}
+} */
 
 .navBar a:after {
     background: none repeat scroll 0 0 transparent;
@@ -95,7 +99,7 @@ header h2 {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: black;
+    background: white;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -103,6 +107,14 @@ header h2 {
 a:hover:after {
     width: 100%;
     left: 0;
+}
+header {
+    background-image: url(./assets/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 .heroTitle {
@@ -115,21 +127,13 @@ a:hover:after {
     color: black;
 }
 
-header {
-    background-image: url(./assets/back.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
-}
 
 .profilePic {
     text-align: center;
 }
 
 .me {
-    width: 200px;
+    width: 210px;
     height: 200px;
     border-radius: 50%;
     border: 2px solid black;
@@ -148,6 +152,29 @@ h1 {
     display: grid;
     place-items: center;
     color: white;
+}
+
+.typing-demo {
+    width: 18ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }
 
 header .arrow {
@@ -190,15 +217,10 @@ header .arrow i {
     font-size: 3rem;
     }
 
-
-.projects {
-    margin-top: 150px;
+.about p:first-of-type {
+    text-decoration: underline;
+    font-size: 1.3rem;
 }
-
-.project1 {
-    width: 500px;
-}
-
 
 .skills {
     background-color: #D3D3D3;
@@ -235,29 +257,6 @@ header .arrow i {
     color: white;
 }
 
-.typing-demo {
-    width: 18ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: 'Abel',sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
-
 .floatOnHover {
     display: inline-block;
     vertical-align: middle;
@@ -270,8 +269,7 @@ header .arrow i {
     transition-property: transform;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    font-family: 'Abel',
-        sans-serif;;
+    font-family: 'Abel',sans-serif;;
 }
 
 .floatOnHover:hover,
@@ -281,12 +279,35 @@ header .arrow i {
     transform: translateY(-8px);
 }
 
+.floatOnHover:hover i {
+    color: white;
+}
+
+
+.projects {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.projectImg {
+    width: 550px;
+}
+
+.projects ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: lightcoral;
+}
 
 
 
 
-
- .fadeInText {
+/* .fadeInText {
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
     animation: fadeIn 5s; 
@@ -344,4 +365,10 @@ header .arrow i {
     100% {
         opacity: 1;
     }
-} 
+}  */
+
+
+
+
+
+

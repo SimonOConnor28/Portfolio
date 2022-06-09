@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/ae83700708.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <nav class="navBar">
+            <nav class="navBar" id="navBarId">
                 <div>
                     <h2>S.O </h2>
                 </div>
@@ -28,7 +29,7 @@
 
                 <div class="heroTitle">
                     <div class="profilePic">
-                        <img class="me" src="./assets/headshot.jpg" alt="">
+                        <img class="me" src="./assets/me2.jpg" alt="">
                     </div>
                     <div class="title">
                 
@@ -86,25 +87,61 @@
                         <i class="fa-brands fa-react"></i>
                         <p>REACT</p>
                     </li>
+
+                    <li class="floatOnHover">
+                        <i class="devicon-firebase-plain"></i>
+                        <p>firebase</p>
+                    </li>
+
+                    <li class="floatOnHover">
+                        <i class="devicon-github-original"></i>
+                        <p>Github</p>
+                    </li>
+
+                    <li class="floatOnHover">
+                        <i class="devicon-git-plain"></i>
+                        <p>Git</p>
+                    </li>
+
                 </ul>
             </div>
         </div>
         <div class="wrapper">
             <div class="projects">
                 <ul>
-                    <li>
-                        <img class="project1" src="./assets/delicious.jpg" alt="project 1">
+                    <li class="box">
+                        <img class="projectImg" src="./assets/delicious.jpg" alt="project 1">
                         <div>
                             <p>HTML, SASS, JAVASCRIPT</p>
-                            <a href="">Live Demo</a>
+                            <a class="liveDemo" href="https://venerable-crostata-22824e.netlify.app/#">Live Demo</a>
+                            <a href="#"> github</a>
                         </div>
+                    </li>
+
+                    <li class="box">
+                        <img class="projectImg" src="./assets/triviaapp.jpg" alt="">
+                        <p>HTML, SASS, JAVASCRIPT, Paired Programming</p>
+                        <a class="liveDemo" href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
+                        <a href="#"> github</a>
+                    </li>
+
+                    <li class="box">
+                        <img class="projectImg" src="./assets/triviaapp.jpg" alt="">
+                        <p>HTML, SASS, JAVASCRIPT, Paired Programming</p>
+                        <a class="liveDemo" href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
+                        <a href="#"> github</a>
+                    </li>
+
+                    <li class="box">
+                        <img class="projectImg" src="./assets/triviaApp.jpg" alt="">
+                        <p>HTML, SASS, JAVASCRIPT, Paired Programming</p>
+                        <a class="liveDemo" href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
+                        <a href="#"> github</a>
                     </li>
                 </ul>
             </div>
         </div>
     </main>
-
-
 
 
     <script src="app.js"></script>
