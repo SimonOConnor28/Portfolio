@@ -321,6 +321,7 @@ a:hover:after {
 .barMenu {
     position: relative;
     right: 20px;
+    display: none;
 }
 
 .barUl ul {
@@ -357,7 +358,7 @@ header {
 }
 
 .heroTitle {
-    padding-top: 300px;
+    padding-top: 250px;
 }
 
 .title {
@@ -546,7 +547,7 @@ header .arrow i {
 }
 
 .projectImg {
-    width: 550px;
+    width: 500px;
     height: 500px;
 
 }
