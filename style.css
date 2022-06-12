@@ -332,10 +332,13 @@ a:hover:after {
 
 .mobileNav ul {
     width: fit-content;
+    z-index: 10;
+    display: flex;
 }
 
 .mobileNav li {
     padding-top: 10px;
+    display: flex;
 }
 
 
@@ -465,6 +468,7 @@ header .arrow i {
 
 .about p:nth-of-type(2) {
     padding-right: 80px;
+    padding-top: 10px;
 }
 
 .skills {
@@ -547,8 +551,8 @@ header .arrow i {
 }
 
 .projectImg {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
 
 }
 
@@ -655,95 +659,100 @@ label:nth-of-type(3) {
 }
 
 textarea {
+    margin-top: 10px;
     width: 605px;
+    height: 200px;
 }
 
 
+/* media */
 
-.fadeInText:hover {
-    animation: fadeIn 10s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+
+@media (max-width:1224px) {
+    .projects ul {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width:800px) {
-    .navBar {
+@media (max-width:1050px) {
+    /* .navBar {
         display: none;
     }
 
     .barMenu {
-        position: absolute;
-    }
-
-    .barUl ul {
-        position: relative;
-        display: none;
-    }
-
-    .barUl:active {
         display: block;
+    } */
+
+    .about p:nth-last-child(1) {
+        padding-right: 0;
+
+    }
+
+    .skills i {
+        font-size: 75px;
+        color: grey;
+    }
+
+        .projects ul {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+
+    .projectImg {
+        width: 100%;
+    }
+
+    .liveDemo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liveDemo a {
+        margin-top: 5px;
+    }
+
+    .details {
+        width: 255px;
     }
 }
 
 
-
-
 @media (max-width:320px) {
-    .navBar {
+    /* .navBar {
         display: none;
     }
 
+    .barMenu {
+        display: block;
+    } */
 
+    .about p:nth-last-child(1) {
+        padding-right: 0;
+
+    }
+
+    .skills i {
+        font-size: 75px;
+        color: grey;
+    }
+
+    .projectImg {
+        width: 100%;
+    }
+
+    .liveDemo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liveDemo a {
+        margin-top: 5px;
+    }
+
+    .details {
+        width: 255px;
+    }
 }

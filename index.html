@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,9 @@
     <script src="https://kit.fontawesome.com/ae83700708.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+
     <header>
         <div class="wrapper">
             <nav class="navBar" id="navBarId">
@@ -20,204 +23,223 @@
                     <h2>S.O </h2>
                 </div>
                 <ul>
-                    <li class="underLine"><a href="#">About</a></li>
-                    <li class="underLine"><a href="#">Projects</a></li>
-                    <li class="underLine"><a href="#">Skills</a></li>
-                    <li class="underLine"><a href="#">Contact</a></li>
+                    <li class="underLine"><a href="#about">About</a></li>
+                    <li class="underLine"><a href="#skills">Skills</a></li>
+                    <li class="underLine"><a href="#projects">Projects</a></li>
+                    <li class="underLine"><a href="#contact">Contact</a></li>
                 </ul>
-                </nav>
+            </nav>
 
-                <nav class="mobileNav">
-                    <i class="fa-solid fa-bars barMenu"></i>
-                    <div class="barUl">
-                        <ul>
-                            <li class="underLine"><a href="#">About</a></li>
-                            <li class="underLine"><a href="#">Projects</a></li>
-                            <li class="underLine"><a href="#">Skills</a></li>
-                            <li class="underLine"><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="heroTitle">
+                <div class="profilePic">
+                    <img class="me" src="./assets/me2.jpg" alt="">
+                </div>
+                <div class="title">
 
-                <div class="heroTitle">
-                    <div class="profilePic">
-                        <img class="me" src="./assets/me2.jpg" alt="">
-                    </div>
-                    <div class="title">
-                
-                        <h1>Hi, I'm Simon O'Connor</h1>
-                        <div class="profession">
-                            <p class="typing-demo">Front End Developer</p>
-                        </div>
+                    <h1>Hi, I'm Simon O'Connor</h1>
+                    <div class="profession">
+                        <p class="typing-demo">Front End Developer</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="arrow">
-                    <a href="#bio"><i class="fas fa-chevron-down"></i></a>
-                </div>
+            <div class="arrow">
+                <a href="#bio"><i class="fas fa-chevron-down"></i></a>
+            </div>
 
         </div>
-        
+
 
     </header>
     <main>
+
         <div class="wrapper">
-            <div class="about">
+            <div class="about" id="about">
                 <h2>Hello, I am Simon</h2>
                 <p>Web Developer from Toronto Ontario</p>
                 <p>
-                    Hello, I'm Simon. I'm a former Barista turned front end developer. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus dolorem aliquam mollitia et dolores repellendus veritatis earum possimus, maiores quidem beatae rerum modi in nulla itaque! Incidunt, dignissimos aliquam. Voluptatibus.
+                    Hello, I'm Simon. I'm a former Barista turned front end developer. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ducimus dolorem aliquam mollitia et dolores repellendus veritatis
+                    earum possimus, maiores quidem beatae rerum modi in nulla itaque! Incidunt, dignissimos aliquam.
+                    Voluptatibus.
                 </p>
             </div>
         </div>
 
-        <div class="skills">
-            <div class="wrapper">
-                <h2>Skills</h2>
-                <ul>
-                    <li aria-hidden="true" class="floatOnHover">
-                        <i class="fa-brands fa-html5"></i>
-                        <p>HTML</p>
-                    </li>
-
-                    <li aria-hidden="true" class="floatOnHover">
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <p>CSS3</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i aria-hidden="true" class="fa-brands fa-sass"></i>
-                        <p>SASS</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i aria-hidden="true" class="fa-brands fa-js"></i>
-                        <p>JAVASCRIPT</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i aria-hidden="true" class="fa-brands fa-react"></i>
-                        <p>REACT</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i  aria-hidden="true" class="devicon-firebase-plain"></i>
-                        <p>firebase</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i aria-hidden="true" class="devicon-github-original"></i>
-                        <p>Github</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i aria-hidden="true" class="devicon-git-plain"></i>
-                        <p>Git</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i aria-hidden="true" class="fas fa-universal-access"></i>
-                        <p>Accessibility</p>
-                    </li>
-
-                    <li class="floatOnHover">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <p>Responsive Design</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li class="container ">
-                        <img class=" projectImg" src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x.jpeg" alt="project 1">
-                        <div class="overlay">
-                            <div class="text">
-                                <p class="details">Multi-page, responsive web design created for a client request. Built using HTML, SASS, JAVASCRIPT </p>
-                                <p></p>
-                                <div class="liveDemo">
-                                    <a href="https://venerable-crostata-22824e.netlify.app/#">Live Demo</a>
-                                    
-                                    <a href=""> Github</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="container">
-                        <img class="projectImg" src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x (1).jpeg" alt="">
-                        <div class="overlay">
-                            <div class="text">
-                                <p class="details">Trivia night is a responsive single page trivia game built using a <a class="linksUnderline" href="https://opentdb.com/api_config.php">API database</a> with HTML, SASS, JAVASCRIPT, and Paired Programming</p>
-                                <div class="liveDemo">
-                                    <a class="underLine" href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
-                                    <a href="#"> github</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="container">
-                        <img class="projectImg" src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x (1).jpeg" alt="">
-                        <div class="overlay">
-                            <div class="text">
-                                <p class="details">Trivia night is a responsive single page trivia game built using a <a
-                                        class="linksUnderline" href="https://opentdb.com/api_config.php">API database</a> with HTML, SASS,
-                                    JAVASCRIPT, and Paired Programming</p>
-                                <div class="liveDemo">
-                                    <a class="underLine" href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
-                                    <a href="#"> github</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="container">
-                        <img class="projectImg" src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x (1).jpeg" alt="">
-                        <div class="overlay">
-                            <div class="text">
-                                <p class="details">Trivia night is a responsive single page trivia game built using a <a
-                                        class="linksUnderline" href="https://opentdb.com/api_config.php">API database</a> with HTML, SASS,
-                                    JAVASCRIPT, and Paired Programming</p>
-                                <div class="liveDemo">
-                                    <a class="underLine" href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
-                                    <a href="#"> github</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-            <section class="formSection">
+        <section>
+            <div id="skills" class="skills">
                 <div class="wrapper">
-                    <h2>Contact</h2>
+                    <h2>Skills</h2>
                     <ul>
-                        <li> <a href="https://www.linkedin.com/in/simontoconnor/"><i aria-hidden="true" class="fa-brands fa-linkedin"></a></i></li>
+                        <li aria-hidden="true" class="floatOnHover">
+                            <i class="fa-brands fa-html5"></i>
+                            <p>HTML</p>
+                        </li>
+
+                        <li aria-hidden="true" class="floatOnHover">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i aria-hidden="true" class="fa-brands fa-sass"></i>
+                            <p>SASS</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i aria-hidden="true" class="fa-brands fa-js"></i>
+                            <p>JAVASCRIPT</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i aria-hidden="true" class="fa-brands fa-react"></i>
+                            <p>REACT</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i aria-hidden="true" class="devicon-firebase-plain"></i>
+                            <p>firebase</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i aria-hidden="true" class="devicon-github-original"></i>
+                            <p>Github</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i aria-hidden="true" class="devicon-git-plain"></i>
+                            <p>Git</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i aria-hidden="true" class="fas fa-universal-access"></i>
+                            <p>Accessibility</p>
+                        </li>
+
+                        <li class="floatOnHover">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <p>Responsive Design</p>
+                        </li>
                     </ul>
-                    <form action="https://formspree.io/f/mdobjzjd" method="POST">
-                        <label>
-                            <input type="email" name="email" placeholder="Your Email here">
-                        </label>
-                        <label>
-                            <input type="text" name="Name" placeholder="Your Name">
-                        </label>
-                        <label>
-                            <textarea name="message" placeholder="Hi, Simon"></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
-                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <div id="projects" class="projects">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li class="container ">
+                            <img class=" projectImg"
+                                src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x.jpeg"
+                                alt="project 1">
+                            <div class="overlay">
+                                <h3>Project 1</h3>
+                                <div class="text">
+                                    <p class="details">Multi-page, responsive web design created for a client request.
+                                        Built using HTML, SASS, JAVASCRIPT </p>
+                                    <p></p>
+                                    <div class="liveDemo">
+                                        <a href="https://venerable-crostata-22824e.netlify.app/#">Live Demo</a>
+                                        <a href=""> Github</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="container">
+                            <img class="projectImg"
+                                src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x (1).jpeg"
+                                alt="">
+                            <div class="overlay">
+                                <h3>Project 2</h3>
+                                <div class="text">
+                                   
+                                    <p class="details">Trivia night is a responsive single page trivia game built using
+                                        a <a class="linksUnderline" href="https://opentdb.com/api_config.php">API
+                                            database</a> with HTML, SASS, JAVASCRIPT, and Paired Programming</p>
+                                    <div class="liveDemo">
+                                        <a class="underLine"
+                                            href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
+                                        <a href="#"> github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="container">
+                            <img class="projectImg"
+                                src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x (1).jpeg"
+                                alt="">
+                            <div class="overlay">
+                                <h3>Project 3</h3>
+                                <div class="text">
+                                    <p class="details">Trivia night is a responsive single page trivia game built using
+                                        a <a class="linksUnderline" href="https://opentdb.com/api_config.php">API
+                                            database</a> with HTML, SASS,
+                                        JAVASCRIPT, and Paired Programming</p>
+                                    <div class="liveDemo">
+                                        <a class="underLine"
+                                            href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
+                                        <a href="#"> github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="container">
+                            <img class="projectImg"
+                                src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x (1).jpeg"
+                                alt="">
+                            <div class="overlay">
+                                <h3>Project 4</h3>
+                                <div class="text">
+                                    <p class="details">Trivia night is a responsive single page trivia game built using
+                                        a <a class="linksUnderline" href="https://opentdb.com/api_config.php">API
+                                            database</a> with HTML, SASS,
+                                        JAVASCRIPT, and Paired Programming</p>
+                                    <div class="liveDemo">
+                                        <a class="underLine"
+                                            href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
+                                        <a href="#"> github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="formSection">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <ul>
+                    <li> <a href="https://www.linkedin.com/in/simontoconnor/"><i aria-hidden="true"
+                                class="fa-brands fa-linkedin"></a></i></li>
+                </ul>
+                <form action="https://formspree.io/f/mdobjzjd" method="POST">
+                    <label>
+                        <input type="email" name="email" placeholder="Your Email here">
+                    </label>
+                    <label>
+                        <input type="text" name="Name" placeholder="Your Name">
+                    </label>
+                    <label>
+                        <textarea name="message" placeholder="Hi, Simon"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
     </main>
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
