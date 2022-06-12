@@ -15,8 +15,29 @@
 </head>
 
 <body>
-
     <header>
+        <!--Mobile nav-->
+    <nav class="nav">
+        <div class="container">
+            <div class="main_list" id="mainListDiv">
+                <ul>
+                    <li class="underLine"><a href="#about">About</a></li>
+                    <li class="underLine"><a href="#skills">Skills</a></li>
+                    <li class="underLine"><a href="#projects">Projects</a></li>
+                    <li class="underLine"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="media_button">
+                <button class="main_media_button" id="mediaButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!--main Nav-->
         <div class="wrapper">
             <nav class="navBar" id="navBarId">
                 <div>
@@ -156,7 +177,6 @@
                             <div class="overlay">
                                 <h3>Project 2</h3>
                                 <div class="text">
-                                   
                                     <p class="details">Trivia night is a responsive single page trivia game built using
                                         a <a class="linksUnderline" href="https://opentdb.com/api_config.php">API
                                             database</a> with HTML, SASS, JAVASCRIPT, and Paired Programming</p>
@@ -170,6 +190,7 @@
                         </li>
 
                         <li class="container">
+                        
                             <img class="projectImg"
                                 src="./assets/new-imac-(24-inches)-mockup-front-view-on-table-template@2x (1).jpeg"
                                 alt="">
@@ -178,8 +199,7 @@
                                 <div class="text">
                                     <p class="details">Trivia night is a responsive single page trivia game built using
                                         a <a class="linksUnderline" href="https://opentdb.com/api_config.php">API
-                                            database</a> with HTML, SASS,
-                                        JAVASCRIPT, and Paired Programming</p>
+                                            database</a> with HTML, SASS, JAVASCRIPT, and Paired Programming</p>
                                     <div class="liveDemo">
                                         <a class="underLine"
                                             href="https://boisterous-cheesecake-b1d2d5.netlify.app/">Live Demo</a>
@@ -214,29 +234,87 @@
         </section>
 
 
-        <section id="contact" class="formSection">
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/simontoconnor/">
+                            <i aria-hidden="true" class="fa-brands fa-linkedin"></i></a>
+                            <p>LinkedIn</p>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/SimonOConnor28">
+                            <i aria-hidden="true" class="devicon-github-original"></i></a>
+                            <p>Github</p>
+                    </li>
+
+                    <li>
+                        <a href="https://calendly.com/simonoconnor">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </a>
+                        <p>calendly</p>
+                    </li>
+                </ul>
+
+
+                <form class="form" action="https://formspree.io/f/mdobjzjd" method="POST">
+                    <div class="twoInput">
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Email" />
+                    </div>
+                    <textarea placeholder="Hi, Simon">
+            
+                            </textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+        <!-- <section id="contact" class="formSection">
             <div class="wrapper">
                 <h2>Contact</h2>
+
                 <ul>
-                    <li> <a href="https://www.linkedin.com/in/simontoconnor/"><i aria-hidden="true"
-                                class="fa-brands fa-linkedin"></a></i></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/simontoconnor/">
+                        <i aria-hidden="true" class="fa-brands fa-linkedin"></a></i>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/SimonOConnor28">
+                        <i aria-hidden="true" class="devicon-github-original"></i>
+                        </a>
+                    </li>
                 </ul>
+
                 <form action="https://formspree.io/f/mdobjzjd" method="POST">
-                    <label>
-                        <input type="email" name="email" placeholder="Your Email here">
-                    </label>
-                    <label>
-                        <input type="text" name="Name" placeholder="Your Name">
-                    </label>
-                    <label>
-                        <textarea name="message" placeholder="Hi, Simon"></textarea>
-                    </label>
-                    <!-- your other form fields go here -->
+                    
+                    <div class="inputForm">
+
+                            <label for="email"></label>
+                            <input class="input" type="email" name="email" placeholder="Your Email here">
+                        
+                        
+                        <label for="email"></label>
+                            <input class="input" type="text" name="Name" placeholder="Your Name">
+                    </div>
+                    
+                    <div class="messageBox">
+
+                        <label for="message"></label>
+                            <textarea name="message" placeholder="Hi, Simon"></textarea>
+                    </div>
+                    
                     <button type="submit">Send</button>
                 </form>
             </div>
-        </section>
+        </section> -->
     </main>
+
+    <footer> 
+        <p>Created by Simon O'Connor in 2022</p>
+    </footer>
 
 
     <script src="app.js"></script>

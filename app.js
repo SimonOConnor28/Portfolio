@@ -10,14 +10,26 @@
     });
 
 
-const menuBar = document.querySelector('.barMenu');
-const barUl = document.querySelector('.barUl')
 
-menuBar.addEventListener('click', function () {
-    menuBar.classList.toggle('active')
-    barUl.classList.toggle('barUl')
+    const mainListDiv = document.getElementById("mainListDiv"),
+      mediaButton = document.getElementById("mediaButton");
+
+mediaButton.onclick = function () {
     
-    console.log('clicked');
-})
+    "use strict";
+    
+    mainListDiv.classList.toggle("show_list");
+    mediaButton.classList.toggle("active");
+    
+};
+// const menuBar = document.getElementById('menuBar');
+// const barUl = document.getElementById('navBarId')
+
+// menuBar.addEventListener('click', function () {
+//     menuBar.classList.toggle('active')
+//     // barUl.classList.toggle('showNav')
+//     console.log('clicked');
+// });
+
 
 
